@@ -1,0 +1,11 @@
+{
+  "name": "WaveDay",
+  "short_name": "WaveDay",
+  "start_url": ".",
+  "display": "browser",
+  "background_color": "#150E20",
+  "theme_color": "#150E20",
+  "icons": [
+    { "src": "new_logo.png", "sizes": "300x300", "type": "image/png" }
+  ]
+}
