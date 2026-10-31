@@ -201,7 +201,39 @@ body.nav-open{
   margin-top:16px;max-width:36ch;
   font-size:17px;line-height:1.7;color:var(--muted);
 }
-.store{margin-top:14px;display:grid;gap:6px;justify-items:start}
+.hero__cta{
+  margin-top:20px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:12px 20px;
+  padding:clamp(16px,3vw,22px);
+  border-radius:20px;
+  background:linear-gradient(135deg,rgba(124,37,244,.18),rgba(238,153,255,.06));
+  border:1px solid var(--line);
+  max-width:min(100%,520px);
+}
+.hero__cta-copy{flex:1 1 200px;min-width:0}
+.hero__cta-title{
+  font-family:"Unbounded","Nunito",sans-serif;
+  font-size:clamp(18px,2.4vw,22px);
+  font-weight:700;
+  line-height:1.2;
+  letter-spacing:-.02em;
+}
+.hero__cta-meta{
+  margin-top:6px;
+  font-size:14px;
+  line-height:1.45;
+  color:var(--muted);
+}
+.hero__cta-changelog{margin-top:6px;font-size:13px}
+.hero__cta-changelog a{
+  color:var(--accent-text);
+  font-weight:800;
+  text-decoration:none;
+}
+.hero__cta .store-badge--lg{flex-shrink:0;margin-left:auto}
 .store-badge{
   display:block;
   width:min(186px,100%);
@@ -705,7 +737,8 @@ body.nav-open{
   text-decoration:none;
 }
 
-/* CTA */
+
+/* CTA band (bottom) */
 .cta-band{
   display:flex;
   flex-wrap:wrap;
@@ -726,6 +759,7 @@ body.nav-open{
 .cta-band__changelog{margin-top:6px;font-size:13px}
 .cta-band__changelog a{color:var(--accent-text);font-weight:800;text-decoration:none}
 .cta-band .store-badge--lg{margin-left:auto;flex-shrink:0}
+
 .store-badge--lg{
   width:200px;
   height:54px;
@@ -740,6 +774,7 @@ body.nav-open{
 .showcase,
 .privacy-band,
 .faq-band,
+.hero__cta,
 .cta-band{
   scroll-margin-top:calc(var(--bar-h) + 8px);
 }
@@ -911,6 +946,7 @@ body.nav-open{
   .privacy-pillars{grid-template-columns:1fr}
   .privacy-band__title,.privacy-band__lead{max-width:none}
   .cta-band .store-badge--lg{margin-left:0}
+  .hero__cta .store-badge--lg{margin-left:0;width:100%;max-width:200px}
 }
 @media(max-width:560px){
   :root{--bar-h:64px}
@@ -931,6 +967,15 @@ body.nav-open{
   .privacy-band,
   .faq-band{
     padding-inline:clamp(16px,4vw,24px);
+  }
+  .hero__cta{
+    flex-direction:column;
+    align-items:stretch;
+    max-width:none;
+  }
+  .hero__cta .store-badge--lg{
+    align-self:flex-start;
+    margin-left:0;
   }
   .cta-band{
     flex-direction:column;
@@ -960,6 +1005,7 @@ body.nav-open{
   .privacy-band__link:hover{color:var(--pink)}
   .faq-band__inline:hover{text-decoration:underline}
   .faq-band__more a:hover{color:var(--accent-text)}
+  .hero__cta-changelog a:hover{text-decoration:underline}
   .cta-band__changelog a:hover{text-decoration:underline}
   .foot__links a:hover{opacity:.85}
 }
