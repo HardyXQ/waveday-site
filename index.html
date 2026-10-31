@@ -4,23 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>WaveDay — планер, привычки и закрытый чат</title>
-<meta name="description" content="WaveDay: задачи, привычки, цели и заметки на телефоне. Чат со сквозным шифрованием. Android, WaveSign Studio.">
+<meta name="description" content="WaveDay: задачи, привычки, цели и заметки на телефоне. Чаты со сквозным шифрованием. Android, WaveSign Studio.">
 <meta name="theme-color" content="#150E20">
 <link rel="icon" type="image/png" href="new_logo.png">
 <link rel="apple-touch-icon" href="new_logo.png">
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Pixelify+Sans:wght@400..700&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 <div class="frame">
   <div class="card" id="top">
     <header class="bar" id="siteBar">
-      <a class="brand-mini" href="#start" aria-label="WaveDay">
+      <a class="brand-mini" href="#start" aria-label="WaveSign">
         <img src="new_logo.png" alt="">
-        <span>WaveDay</span>
+        <span>WaveSign</span>
       </a>
       <nav class="bar__nav" aria-label="Main">
         <a href="#features" data-i18n="navFeatures">Возможности</a>
@@ -28,6 +28,7 @@
         <a href="#privacy" data-i18n="navPrivacy">Приватность</a>
         <a href="#download" data-i18n="navDownload">Скачать</a>
         <a href="support/" data-i18n="navSupport">Поддержка</a>
+        <a href="https://wavesign.art/" rel="noopener noreferrer" data-i18n="navLabel">Сайт</a>
       </nav>
       <div class="bar__tools">
         <div class="lang" role="group" data-i18n-aria="langLabel" aria-label="Язык">
@@ -47,6 +48,7 @@
       <a href="#privacy" data-nav-close data-i18n="navPrivacy">Приватность</a>
       <a href="#download" data-nav-close data-i18n="navDownload">Скачать</a>
       <a href="support/" data-nav-close data-i18n="navSupport">Поддержка</a>
+      <a href="https://wavesign.art/" rel="noopener noreferrer" data-nav-close data-i18n="navLabel">Сайт</a>
       <a href="feedback/" data-nav-close data-i18n="footerFeedback">Ошибки и идеи</a>
     </nav>
 
@@ -58,7 +60,7 @@
             <span data-i18n="heroLine1">Твой день</span>
             <em data-i18n="heroAccent">в одном приложении</em>
           </h1>
-          <p class="hero__lead" data-i18n="heroLead">Привычки, задачи, цели и заметки на телефоне. Переписку читаете только вы и собеседник.</p>
+          <p class="hero__lead" data-i18n="heroLead">Привычки, задачи, цели, заметки и чаты на твоём устройстве!</p>
           <div class="store">
             <a class="store-badge" id="playBtn" href="#download" data-i18n-aria="playBadgeAria" aria-label="Get it on Google Play">
               <img src="assets/google-play-badge.png" width="320" height="320" alt="">
@@ -77,7 +79,15 @@
         </div>
       </section>
 
-      <section class="showcase" id="features">
+      <section class="showcase showcase--split showcase--visual-left" id="features">
+        <div class="showcase__copy">
+          <h2 data-i18n="featuresTitle">Один день — одно место</h2>
+          <p data-i18n="featuresLead">Задачи, привычки, цели, заметки и пауза. Планировать день стало проще!</p>
+          <ul class="ticks">
+            <li data-i18n="feat1">Привычки со стриком и напоминаниями</li>
+            <li data-i18n="feat4">Отправляй другу задачу или привычку прямо из чата</li>
+          </ul>
+        </div>
         <div class="showcase__scene showcase__scene--phones">
           <span class="pill pill--violet" data-i18n="pillHabits">Привычки</span>
           <span class="pill pill--pink" data-i18n="pillTasks">Задачи</span>
@@ -95,17 +105,17 @@
             </div>
           </figure>
         </div>
-        <div class="showcase__copy">
-          <h2 data-i18n="featuresTitle">Один день — одно место</h2>
-          <p data-i18n="featuresLead">Задачи, привычки, цели, заметки и отдых. Без лишних экранов и рекламы.</p>
-          <ul class="ticks">
-            <li data-i18n="feat1">Привычки со streak и напоминаниями</li>
-            <li data-i18n="feat4">Отправить другу задачу или привычку из переписки</li>
-          </ul>
-        </div>
       </section>
 
-      <section class="showcase showcase--reverse" id="stats">
+      <section class="showcase showcase--split showcase--visual-right" id="stats">
+        <div class="showcase__copy">
+          <h2 data-i18n="statsTitle">Статистика и настроение</h2>
+          <p data-i18n="statsLead">Подробная статистика с отслеживанием выполнения привычек, задач и целей</p>
+          <ul class="ticks">
+            <li data-i18n="statsF1">Запись настроения и календарь по дням</li>
+            <li data-i18n="statsF2">Графики привычек и активности</li>
+          </ul>
+        </div>
         <div class="showcase__scene showcase__scene--phones">
           <span class="pill pill--violet" data-i18n="pillStats">Статистика</span>
           <span class="pill pill--pink" data-i18n="pillMood">Настроение</span>
@@ -122,20 +132,19 @@
             </div>
           </figure>
         </div>
-        <div class="showcase__copy">
-          <h2 data-i18n="statsTitle">Статистика и настроение</h2>
-          <p data-i18n="statsLead">Отдельный раздел в приложении: как проходит день и как вы себя чувствуете. Данные остаются у вас на телефоне.</p>
-          <ul class="ticks">
-            <li data-i18n="statsF1">Запись настроения и календарь по дням</li>
-            <li data-i18n="statsF2">Графики привычек и активности</li>
-            <li data-i18n="statsF3">Достижения и подробная аналитика — в тарифе Pro</li>
-          </ul>
-        </div>
       </section>
 
-      <section class="showcase" id="themes">
+      <section class="showcase showcase--split showcase--visual-left" id="themes">
+        <div class="showcase__copy">
+          <h2 data-i18n="themesTitle">Темы оформления</h2>
+          <p data-i18n="themesLead">Меняйте вид приложения под себя: стандартная тема, Зефир или свои цвета чернил и бумаги.</p>
+          <ul class="ticks">
+            <li data-i18n="themesF1">Base — знакомая стандартная тема WaveDay</li>
+            <li data-i18n="themesF2">Все темы адаптированы под светлый и тёмный режим</li>
+            <li data-i18n="themesF3">Своя тема: любая пара цветов, светлый и темный режим (Pro only)</li>
+          </ul>
+        </div>
         <div class="showcase__scene showcase__scene--phones showcase__scene--themes">
-          <span class="pill pill--sky" data-i18n="themeZefir">Зефир</span>
           <figure class="phone-mock device device--themes">
             <img class="phone-mock__frame" src="assets/phone-frame.png" alt="" width="379" height="800" loading="lazy">
             <div class="phone-mock__screen">
@@ -143,78 +152,54 @@
             </div>
           </figure>
         </div>
+      </section>
+
+      <section class="showcase showcase--split showcase--visual-right" id="chat">
         <div class="showcase__copy">
-          <h2 data-i18n="themesTitle">Темы оформления</h2>
-          <p data-i18n="themesLead">Меняйте вид приложения: базовая тема, готовые палитры и свои цвета «чернил» и «бумаги».</p>
+          <h2 data-i18n="chatTitle">Чаты со сквозным шифрованием</h2>
+          <p data-i18n="chatLead">Все чаты защищены сквозным шифрованием и хранятся только на устройствах собеседников чата</p>
           <ul class="ticks">
-            <li data-i18n="themesF1">Base — знакомый светлый интерфейс WaveDay</li>
-            <li data-i18n="themesF2">Палитры, например «Зефир», с мягким фоном и акцентом</li>
-            <li data-i18n="themesF3">Своя тема: любая пара цветов, светлый и тёмный режим (Pro)</li>
+            <li data-i18n="chatF2">Без входа — локальный планер; чат после авторизации</li>
+            <li data-i18n="chatF3">Присылайте задачи, привычки или цели друзьям и выполняйте вместе</li>
           </ul>
         </div>
-      </section>
-
-      <section class="showcase showcase--center" id="chat">
-        <h2 class="showcase__center-title" data-i18n="chatTitle">Чат со сквозным шифрованием</h2>
-        <div class="showcase__stage">
-          <div class="hint-stack">
-            <div class="hint hint--sky">
-              <span class="hint__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-              </span>
-              <span data-i18n="chatF1">Заявки на переписку и скрытый статус «в сети»</span>
+        <div class="showcase__scene showcase__scene--phones showcase__scene--chat">
+          <span class="pill pill--violet pill--chat-e2e" data-i18n="pillChatE2e">E2E</span>
+          <figure class="phone-mock device device--chat-left">
+            <img class="phone-mock__frame" src="assets/phone-frame.png" alt="" width="379" height="800" loading="lazy">
+            <div class="phone-mock__screen">
+              <img src="assets/screens/chats.png?v=4" alt="" width="1080" height="2400" loading="lazy">
             </div>
-            <div class="hint hint--violet">
-              <span class="hint__icon" aria-hidden="true">✓</span>
-              <span data-i18n="chatF3">Друзья могут прислать вам задачу в день</span>
+          </figure>
+          <figure class="phone-mock device device--chat-mid">
+            <img class="phone-mock__frame" src="assets/phone-frame.png" alt="" width="379" height="800" loading="lazy">
+            <div class="phone-mock__screen">
+              <img src="assets/screens/share.png?v=4" alt="" width="1080" height="2400" loading="lazy">
             </div>
-          </div>
-          <div class="device-row">
-            <figure class="phone-mock device device--sm">
-              <img class="phone-mock__frame" src="assets/phone-frame.png" alt="" width="379" height="800" loading="lazy">
-              <div class="phone-mock__screen">
-                <img src="assets/screens/chats.png?v=4" alt="" width="1080" height="2400" loading="lazy">
-              </div>
-            </figure>
-            <figure class="phone-mock device device--sm device--lift">
-              <img class="phone-mock__frame" src="assets/phone-frame.png" alt="" width="379" height="800" loading="lazy">
-              <div class="phone-mock__screen">
-                <img src="assets/screens/share.png?v=4" alt="" width="1080" height="2400" loading="lazy">
-              </div>
-            </figure>
-            <figure class="phone-mock device device--sm">
-              <img class="phone-mock__frame" src="assets/phone-frame.png" alt="" width="379" height="800" loading="lazy">
-              <div class="phone-mock__screen">
-                <img src="assets/screens/wavy-reminder.png?v=4" alt="" width="1080" height="2400" loading="lazy">
-              </div>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="showcase showcase--reverse" id="wavy">
-        <div class="banner-stack">
-          <div class="banner banner--pink">
-            <span class="banner__emoji" aria-hidden="true">💬</span>
-            <span data-i18n="wavyBanner1">Спроси Wavy в чате</span>
-          </div>
-          <div class="banner banner--sky">
-            <span class="banner__emoji" aria-hidden="true">☁</span>
-            <span data-i18n="wavyBanner2">Запрос уходит в Google Cloud</span>
-          </div>
-        </div>
-        <div class="showcase__copy">
-          <h2 data-i18n="wavyTitle">Wavy</h2>
-          <p data-i18n="wavyLead">Помогает разложить день в чате. Ответы модели могут быть неточными; запрос уходит в Google Cloud. Не для медицины и юриспруденции.</p>
-        </div>
-        <div class="duo-scene">
-          <figure class="phone-mock device device--wavy-a">
+          </figure>
+          <figure class="phone-mock device device--chat-right">
             <img class="phone-mock__frame" src="assets/phone-frame.png" alt="" width="379" height="800" loading="lazy">
             <div class="phone-mock__screen">
               <img src="assets/screens/wavy-reminder.png?v=4" alt="" width="1080" height="2400" loading="lazy">
             </div>
           </figure>
-          <figure class="phone-mock device device--wavy-b">
+        </div>
+      </section>
+
+      <section class="showcase showcase--split showcase--visual-right" id="wavy">
+        <div class="showcase__copy">
+          <h2 data-i18n="wavyTitle">Wavy AI</h2>
+          <p data-i18n="wavyLead">Твой карманный помощник для планирования. Помогает разложить день, и начать планировать без сложностей.</p>
+          <p class="wavy-note" data-i18n="wavyLeadNote">* Ответы модели могут быть неточными, так как это искусственный интеллект.</p>
+        </div>
+        <div class="showcase__scene showcase__scene--phones showcase__scene--wavy">
+          <div class="banner banner--pink wavy-float-banner">
+            <span class="banner__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.5 8h5"/><path d="M9.5 12H14"/></svg>
+            </span>
+            <span data-i18n="wavyBanner1">Спроси Wavy в чате</span>
+          </div>
+          <figure class="phone-mock device device--wavy-single">
             <img class="phone-mock__frame" src="assets/phone-frame.png" alt="" width="379" height="800" loading="lazy">
             <div class="phone-mock__screen">
               <img src="assets/screens/wavy-chat.png?v=4" alt="" width="1080" height="2400" loading="lazy">
@@ -228,21 +213,20 @@
         <div class="privacy-band__inner">
           <p class="privacy-band__eyebrow" data-i18n="privacyEyebrow">Приватность</p>
           <h2 class="privacy-band__title" id="privacy-heading" data-i18n="privacyTitle">Простыми словами</h2>
-          <p class="privacy-band__lead" data-i18n="privacyLead">Главное отличие WaveDay: ваш планер и переписка не превращаются в рекламный профиль.</p>
           <div class="privacy-pillars">
             <article class="privacy-pillar">
               <span class="privacy-pillar__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 19h2"/></svg>
               </span>
-              <h3 data-i18n="privacyP1Title">Записи на телефоне</h3>
-              <p data-i18n="privacyP1Text">Задачи, привычки, цели и заметки по умолчанию хранятся на устройстве. Облако — только ваш Google Drive, если сами включите синхронизацию.</p>
+              <h3 data-i18n="privacyP1Title">Хранение на устройстве</h3>
+              <p data-i18n="privacyP1Text">Задачи, привычки, цели и заметки по умолчанию хранятся на устройстве. Если выполнен вход через Google, доступна синхронизация через Google Drive.</p>
             </article>
             <article class="privacy-pillar">
               <span class="privacy-pillar__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
               </span>
-              <h3 data-i18n="privacyP2Title">Чат со сквозным шифрованием</h3>
-              <p data-i18n="privacyP2Text">Ключи остаются на телефонах. Мы не читаем текст сообщений — только доставляем их так же, как закрытое письмо в конверте.</p>
+              <h3 data-i18n="privacyP2Title">Чаты со сквозным шифрованием</h3>
+              <p data-i18n="privacyP2Text">Все переписки и ключи шифрования хранятся исключительно локально на устройствах участников чата. При потере устройства чаты не сохраняются.</p>
             </article>
           </div>
           <a class="privacy-band__link" href="privacy/" data-i18n="privacyMore">Полная политика конфиденциальности</a>
@@ -258,7 +242,7 @@
           </details>
           <details>
             <summary data-i18n="faqQ2">Где хранятся данные?</summary>
-            <p data-i18n="faqA2">Записи планера — на вашем устройстве. Если включите синхронизацию, копия попадает в вашу личную папку Google Drive, не в общую базу студии. Переписка шифруется на телефоне.</p>
+            <p data-i18n="faqA2">На устройстве. Если выполнен вход через Google, доступна синхронизация с помощью Google Drive. Переписка шифруется на телефоне.</p>
           </details>
           <details>
             <summary data-i18n="faqQ3">Как перенести на другой телефон?</summary>
@@ -267,7 +251,7 @@
           <details>
             <summary data-i18n="faqQ4">Как удалить данные?</summary>
             <p>
-              <span data-i18n="faqA4">Аккаунт и данные на сервере: Настройки → Аккаунт → «Удалить аккаунт». Только этот телефон: «Сбросить все данные». Без приложения — напишите на wavesign.art@gmail.com.</span>
+              <span data-i18n="faqA4">Аккаунт и данные на сервере: Мой профиль → Иконка редактирования → «Удалить аккаунт». Только локально на устройстве: Настройки → «Сбросить все данные». Без приложения — напишите на wavesign.art@gmail.com.</span>
               <a class="faq-band__inline" href="delete-account/" data-i18n="faqDeleteLink">Подробнее об удалении</a>
             </p>
           </details>
@@ -293,7 +277,6 @@
         <a href="privacy/" data-i18n="privacy">Политика конфиденциальности</a>
         <a href="terms/" data-i18n="terms">Условия</a>
         <a href="delete-account/" data-i18n="deleteAccount">Удаление данных</a>
-        <a href="whats-new/" data-i18n="whatsNew">Что нового</a>
         <a href="feedback/" data-i18n="footerFeedback">Ошибки и идеи</a>
         <a href="support/" data-i18n="navSupport">Поддержка</a>
         <a href="mailto:wavesign.art@gmail.com">wavesign.art@gmail.com</a>

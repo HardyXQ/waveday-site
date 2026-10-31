@@ -2,6 +2,7 @@
   var KEY = 'waveday-lang';
   var LANGS = ['ru', 'uk', 'en'];
   var RIGHTS = { ru: 'Все права защищены.', uk: 'Всі права захищені.', en: 'All rights reserved.' };
+  var NAV_SITE = { ru: 'Сайт', uk: 'Сайт', en: 'Site' };
   var TITLES = window.LEGAL_TITLES || {};
   function norm(c) {
     c = String(c || '').toLowerCase().split(/[-_]/)[0];
@@ -42,6 +43,8 @@
       b.setAttribute('aria-pressed', String(on));
       b.classList.toggle('active', on);
     });
+    var siteNav = document.querySelector('[data-nav-site]');
+    if (siteNav) siteNav.textContent = NAV_SITE[lang] || NAV_SITE.en;
   }
   function initScrollHeader() {
     var bar = document.getElementById('siteBar');
