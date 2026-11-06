@@ -6,6 +6,7 @@
 <title>Удаление аккаунта и данных — WaveDay</title>
 <meta name="description" content="Как удалить аккаунт WaveDay и связанные данные в приложении или по запросу в поддержку.">
 <meta name="theme-color" content="#150E20">
+<meta name="referrer" content="no-referrer">
 <link rel="icon" type="image/png" href="../new_logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,16 +42,17 @@
 <article class="doc" lang="ru" data-lang="ru">
 <h1>Удаление аккаунта и данных</h1>
 <p class="meta">WaveDay · WaveSign Studio · <a href="mailto:wavesign.art@gmail.com">wavesign.art@gmail.com</a></p>
+<section class="deletion-tool" data-tool="ru"><h2>Удалить аккаунт через сайт</h2><p>Введите почту аккаунта. Мы отправим ссылку для подтверждения. После перехода понадобится ещё раз ввести тот же адрес и подтвердить удаление.</p><form class="report-form" data-delete-form onsubmit="return false"><label class="report-form__field"><span>Почта аккаунта WaveDay</span><input name="email" type="email" autocomplete="email" required maxlength="254"></label><button class="report-form__submit" type="submit">Получить ссылку</button></form><div data-delete-confirm hidden><p>Аккаунт и связанные данные WaveDay будут удалены. Действие необратимо. Данные на устройствах и резервная копия в вашем Google Drive могут остаться; удалите их самостоятельно. Подписку Google Play нужно отменить отдельно.</p><label><input type="checkbox" data-delete-agree> Я понимаю последствия и хочу удалить аккаунт</label><div><button class="report-form__submit" type="button" data-delete-now disabled>Удалить аккаунт</button></div></div><p class="report-form__hint" data-delete-status role="status" aria-live="polite">Для работы формы нужны JavaScript и интернет.</p><p>Можно также <a href="mailto:wavesign.art@gmail.com?subject=WaveDay%20data%20deletion">написать в поддержку</a>, например для удаления отдельных данных без удаления аккаунта.</p><p>Удалённые зашифрованные вложения очищаются при периодической уборке. Временная техническая отметка защищает удаление от старых сеансов; обезличенная диагностика может храниться до 14 месяцев.</p></section>
 <section>
 <h2>1. Два разных действия</h2>
-<p><b>«Удалить аккаунт»</b> — стирает профиль, чат и резервные копии на серверах WaveSign. Задачи, привычки и цели на этом телефоне остаются локально, пока вы сами их не удалите или не нажмёте «Сбросить все данные».</p>
+<p><b>«Удалить аккаунт»</b> — удаляет аккаунт, профиль и связанные данные чата в WaveDay. Задачи, привычки и цели на этом телефоне остаются локально, пока вы сами их не удалите или не нажмёте «Сбросить все данные».</p>
 <p><b>«Сбросить все данные»</b> (в настройках приложения) — очищает только этот телефон и выходит из аккаунта. Аккаунт на сервере, чат на других устройствах и облачная копия сохраняются: можно войти снова.</p>
 </section>
 <section>
 <h2>2. Как удалить аккаунт в приложении</h2>
 <ol>
 <li>Откройте WaveDay и войдите в аккаунт (Google или почта).</li>
-<li>Перейдите в <b>Настройки → Аккаунт</b>.</li>
+<li>Откройте профиль, нажмите <b>«Редактировать»</b> и найдите раздел <b>«Аккаунт»</b>.</li>
 <li>Нажмите <b>«Удалить аккаунт»</b> и подтвердите.</li>
 </ol>
 <p>Перед удалением приложение покажет, что именно будет удалено. Действие необратимо для данных аккаунта на сервере.</p>
@@ -61,7 +63,7 @@
 <li>Учётная запись (идентификатор, привязка Google или почты).</li>
 <li>Профиль и публичная лента профиля на сервере.</li>
 <li>Чаты, группы и связанные данные чата на серверах WaveSign (ключи и зашифрованные сообщения на сервере).</li>
-<li>Резервная копия планера в облаке, если она была включена.</li>
+<li>Резервная копия в Google Drive удаляется приложением при действующей Google-сессии; при удалении через сайт удалите её самостоятельно в Google Drive.</li>
 <li>Подписка привязана к аккаунту Google Play — отмените её отдельно в Google Play, если нужно.</li>
 </ul>
 </section>
@@ -69,7 +71,7 @@
 <h2>4. Что не удаляется командой «Удалить аккаунт»</h2>
 <ul>
 <li>Задачи, привычки, цели, заметки и настройки, сохранённые <b>только на этом телефоне</b>.</li>
-<li>Копия в вашей папке Google Drive, если вы синхронизировали вручную вне нашего сервера — ею управляете вы в Google.</li>
+<li>Резервная копия в вашем Google Drive при удалении через сайт; удалите её в настройках Google Drive.</li>
 <li>Данные, которые Google Play или Google Cloud хранят по своим правилам (чеки покупок, логи у провайдера).</li>
 </ul>
 <p>Чтобы стереть и локальный планер на телефоне, после удаления аккаунта используйте «Сбросить все данные» или удалите приложение и его данные в настройках Android.</p>
@@ -77,7 +79,7 @@
 <section>
 <h2>5. Удаление без приложения</h2>
 <p>Если нет доступа к телефону или приложению, напишите на <a href="mailto:wavesign.art@gmail.com?subject=WaveDay%20%E2%80%94%20%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B0%D0%BA%D0%BA%D0%B0%D0%BD%D1%82%D0%B0">wavesign.art@gmail.com</a> с темой «WaveDay — удаление аккаунта».</p>
-<p>Укажите адрес почты или Google-аккаунт, с которым входили в WaveDay, и что просите удалить аккаунт и данные на сервере. Мы можем запросить подтверждение личности. Обычно отвечаем в течение 30 дней.</p>
+<p>Укажите адрес почты или Google-аккаунт, с которым входили в WaveDay, и что просите удалить аккаунт и данные на сервере. Мы можем запросить подтверждение личности. Срок обработки сообщим в ответе.</p>
 </section>
 <section>
 <h2>6. Неактивные аккаунты</h2>
@@ -92,16 +94,17 @@
 <article class="doc" lang="uk" data-lang="uk" hidden>
 <h1>Видалення акаунта та даних</h1>
 <p class="meta">WaveDay · WaveSign Studio · <a href="mailto:wavesign.art@gmail.com">wavesign.art@gmail.com</a></p>
+<section class="deletion-tool" data-tool="uk"><h2>Видалити акаунт через сайт</h2><p>Введіть пошту акаунта. Ми надішлемо посилання для підтвердження. Після переходу введіть ту саму адресу ще раз і підтвердьте видалення.</p><form class="report-form" data-delete-form onsubmit="return false"><label class="report-form__field"><span>Пошта акаунта WaveDay</span><input name="email" type="email" autocomplete="email" required maxlength="254"></label><button class="report-form__submit" type="submit">Отримати посилання</button></form><div data-delete-confirm hidden><p>Акаунт і пов’язані дані WaveDay буде видалено. Дію неможливо скасувати. Дані на пристроях і резервна копія у вашому Google Drive можуть залишитися; видаліть їх самостійно. Підписку Google Play потрібно скасувати окремо.</p><label><input type="checkbox" data-delete-agree> Я розумію наслідки й хочу видалити акаунт</label><div><button class="report-form__submit" type="button" data-delete-now disabled>Видалити акаунт</button></div></div><p class="report-form__hint" data-delete-status role="status" aria-live="polite">Для роботи форми потрібні JavaScript та інтернет.</p><p>Ви також можете <a href="mailto:wavesign.art@gmail.com?subject=WaveDay%20data%20deletion">написати в підтримку</a>, наприклад для видалення окремих даних без видалення акаунта.</p><p>Видалені зашифровані вкладення очищуються під час періодичного прибирання. Тимчасова технічна позначка захищає видалення від старих сеансів; знеособлена діагностика може зберігатися до 14 місяців.</p></section>
 <section>
 <h2>1. Дві різні дії</h2>
-<p><b>«Видалити акаунт»</b> — стирає профіль, чат і резервні копії на серверах WaveSign. Задачі, звички та цілі на цьому телефоні залишаються локально, доки ви самі їх не видалите або не натиснете «Скинути всі дані».</p>
+<p><b>«Видалити акаунт»</b> — видаляє акаунт, профіль і пов’язані дані чату в WaveDay. Задачі, звички та цілі на цьому телефоні залишаються локально, доки ви самі їх не видалите або не натиснете «Скинути всі дані».</p>
 <p><b>«Скинути всі дані»</b> — очищує лише цей телефон і виходить з акаунта. Акаунт на сервері, чат на інших пристроях і хмарна копія зберігаються.</p>
 </section>
 <section>
 <h2>2. Як видалити акаунт у застосунку</h2>
 <ol>
 <li>Відкрийте WaveDay і увійдіть (Google або пошта).</li>
-<li>Перейдіть у <b>Налаштування → Акаунт</b>.</li>
+<li>Відкрийте профіль, натисніть <b>«Редагувати»</b> і знайдіть розділ <b>«Акаунт»</b>.</li>
 <li>Натисніть <b>«Видалити акаунт»</b> і підтвердіть.</li>
 </ol>
 </section>
@@ -111,7 +114,7 @@
 <li>Обліковий запис і прив'язка Google або пошти.</li>
 <li>Профіль і публічна стрічка на сервері.</li>
 <li>Чати, групи та дані чату на серверах WaveSign.</li>
-<li>Хмарна резервна копія планера, якщо була увімкнена.</li>
+<li>Копію в Google Drive застосунок видаляє за дійсного сеансу Google; після видалення через сайт видаліть її самостійно в Google Drive.</li>
 <li>Підписку Google Play скасовуйте окремо в магазині.</li>
 </ul>
 </section>
@@ -119,13 +122,13 @@
 <h2>4. Що не видаляється</h2>
 <ul>
 <li>Локальні задачі, звички, цілі та нотатки на цьому телефоні.</li>
-<li>Копія у вашому Google Drive поза нашим сервером.</li>
+<li>Резервна копія у вашому Google Drive під час видалення через сайт; видаліть її в налаштуваннях Google Drive.</li>
 <li>Дані Google Play / Google Cloud за їхніми правилами.</li>
 </ul>
 </section>
 <section>
 <h2>5. Видалення без застосунку</h2>
-<p>Напишіть на <a href="mailto:wavesign.art@gmail.com?subject=WaveDay%20%E2%80%94%20%D0%B2%D0%B8%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F%20%D0%B0%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0">wavesign.art@gmail.com</a>. Вкажіть пошту або Google-акаунт входу. Відповідаємо зазвичай протягом 30 днів.</p>
+<p>Напишіть на <a href="mailto:wavesign.art@gmail.com?subject=WaveDay%20%E2%80%94%20%D0%B2%D0%B8%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F%20%D0%B0%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0">wavesign.art@gmail.com</a>. Вкажіть пошту або Google-акаунт входу. Термін опрацювання повідомимо у відповіді.</p>
 </section>
 <section>
 <h2>6. Неактивні акаунти</h2>
@@ -140,16 +143,17 @@
 <article class="doc" lang="en" data-lang="en" hidden>
 <h1>Account and data deletion</h1>
 <p class="meta">WaveDay · WaveSign Studio · <a href="mailto:wavesign.art@gmail.com">wavesign.art@gmail.com</a></p>
+<section class="deletion-tool" data-tool="en"><h2>Delete your account on this website</h2><p>Enter your account email and we will send a verification link. After opening it, enter the same email again and confirm deletion.</p><form class="report-form" data-delete-form onsubmit="return false"><label class="report-form__field"><span>WaveDay account email</span><input name="email" type="email" autocomplete="email" required maxlength="254"></label><button class="report-form__submit" type="submit">Send verification link</button></form><div data-delete-confirm hidden><p>Your account and associated WaveDay data will be deleted. This cannot be undone. Data on your devices and your personal Google Drive backup may remain; delete them yourself. Cancel your Google Play subscription separately.</p><label><input type="checkbox" data-delete-agree> I understand and want to delete my account</label><div><button class="report-form__submit" type="button" data-delete-now disabled>Delete account</button></div></div><p class="report-form__hint" data-delete-status role="status" aria-live="polite">JavaScript and an internet connection are required for this form.</p><p>You may also <a href="mailto:wavesign.art@gmail.com?subject=WaveDay%20data%20deletion">contact support</a>, for example to request deletion of selected data without deleting your account.</p><p>Deleted encrypted attachments are removed during periodic cleanup. A temporary technical marker protects deletion from old sessions; de-identified diagnostics may be retained for up to 14 months.</p></section>
 <section>
 <h2>1. Two different actions</h2>
-<p><b>Delete account</b> removes your profile, chat and server-side backups. Tasks, habits and goals stored only on this phone stay locally until you clear them or use <b>Reset all data</b>.</p>
+<p><b>Delete account</b> removes your WaveDay account, profile and chat data. Tasks, habits and goals stored only on this phone stay locally until you clear them or use <b>Reset all data</b>.</p>
 <p><b>Reset all data</b> wipes this phone only and signs you out. Your server account, chat on other devices and cloud backup remain — you can sign in again.</p>
 </section>
 <section>
 <h2>2. Delete your account in the app</h2>
 <ol>
 <li>Open WaveDay and sign in (Google or email).</li>
-<li>Go to <b>Settings → Account</b>.</li>
+<li>Open your profile, tap <b>Edit</b>, then find <b>Account</b>.</li>
 <li>Tap <b>Delete account</b> (label in your app language) and confirm.</li>
 </ol>
 <p>The app explains what will be removed before you confirm.</p>
@@ -160,7 +164,7 @@
 <li>Your account (ID, Google or email link).</li>
 <li>Profile and public profile feed on our servers.</li>
 <li>Chats, groups and chat-related server data.</li>
-<li>Cloud planner backup if you had sync enabled.</li>
+<li>The app removes its Google Drive backup when a valid Google session is available. For website deletion, remove it yourself in Google Drive.</li>
 <li>Google Play subscription — cancel separately in Google Play if needed.</li>
 </ul>
 </section>
@@ -168,13 +172,13 @@
 <h2>4. What is not deleted by Delete account</h2>
 <ul>
 <li>Local tasks, habits, goals and notes on this device.</li>
-<li>Files in your own Google Drive folder if you synced outside our server.</li>
+<li>Your Google Drive backup when deletion is requested on this website; remove it in Google Drive settings.</li>
 <li>Records kept by Google Play or Google Cloud under their policies.</li>
 </ul>
 </section>
 <section>
 <h2>5. Request deletion without the app</h2>
-<p>Email <a href="mailto:wavesign.art@gmail.com?subject=WaveDay%20%E2%80%94%20account%20deletion">wavesign.art@gmail.com</a> with subject “WaveDay — account deletion”. Include the email or Google account you used to sign in. We may ask you to verify identity. We usually respond within 30 days.</p>
+<p>Email <a href="mailto:wavesign.art@gmail.com?subject=WaveDay%20%E2%80%94%20account%20deletion">wavesign.art@gmail.com</a> with subject “WaveDay — account deletion”. Include the email or Google account you used to sign in. We may ask you to verify identity. We will explain the expected processing time in our reply.</p>
 </section>
 <section>
 <h2>6. Inactive accounts</h2>
@@ -221,5 +225,6 @@
 </div>
 <script>window.LEGAL_TITLES = {"ru":"Удаление аккаунта и данных — WaveDay","uk":"Видалення акаунта та даних — WaveDay","en":"Account and data deletion — WaveDay"};</script>
 <script src="../js/legal.js"></script>
+<script type="module" src="./deletion.js"></script>
 </body>
 </html>
