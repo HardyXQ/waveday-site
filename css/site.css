@@ -18,6 +18,8 @@
   --pad:clamp(20px,5vw,56px);
   --radius-card:clamp(28px,4vw,48px);
   --bar-h:72px;
+  --showcase-band:840px;
+  --showcase-scene:520px;
   color-scheme:dark;
 }
 
@@ -459,7 +461,7 @@ body.nav-open{
   justify-content:center;
   align-items:flex-end;
   gap:clamp(6px,2.5vw,14px);
-  min-height:clamp(300px,44vw,380px);
+  min-height:var(--showcase-scene);
   padding-inline:0;
 }
 #stats .showcase__scene--phones .device--stats-back,
@@ -489,7 +491,7 @@ body.nav-open{
   align-items:flex-end;
   justify-content:center;
   gap:clamp(4px,1.2vw,12px);
-  min-height:clamp(300px,36vw,400px);
+  min-height:var(--showcase-scene);
   padding:20px 4px 16px;
   overflow:visible;
 }
@@ -521,7 +523,7 @@ body.nav-open{
   margin-bottom:10px;
 }
 .showcase__scene--themes{
-  min-height:clamp(300px,44vw,380px);
+  min-height:var(--showcase-scene);
 }
 .showcase__scene--themes .device--themes{
   --phone-w:min(78%,270px);
@@ -567,7 +569,7 @@ body.nav-open{
   display:flex;
   justify-content:center;
   align-items:center;
-  min-height:clamp(300px,36vw,400px);
+  min-height:var(--showcase-scene);
   padding:12px 4px 16px;
 }
 #wavy .device--wavy-single{
@@ -587,6 +589,23 @@ body.nav-open{
   margin:0;
   pointer-events:none;
   box-shadow:0 16px 40px rgba(124,37,244,.28);
+}
+
+@media(min-width:961px){
+  #stats,
+  #themes,
+  #chat,
+  #wavy{
+    min-height:var(--showcase-band);
+    align-items:center;
+  }
+  #stats .showcase__scene,
+  #themes .showcase__scene,
+  #chat .showcase__scene,
+  #wavy .showcase__scene{
+    align-self:stretch;
+    min-height:var(--showcase-scene);
+  }
 }
 
 /* Privacy highlight */
@@ -811,6 +830,12 @@ body.nav-open{
   .bar__nav{display:none}
   .menu-toggle{display:flex}
   .lang{padding:5px 4px}
+  #stats,
+  #themes,
+  #chat,
+  #wavy{
+    min-height:0;
+  }
   .hero{
     grid-template-columns:1fr;
     padding-top:clamp(20px,4.5vw,32px);
