@@ -744,8 +744,7 @@ body.nav-open{
   align-self:center;
 }
 .cta-band--inline{
-  margin-top:auto;
-  margin-bottom:auto;
+  margin:24px 0 0;
   padding:14px clamp(16px,3vw,22px);
   width:100%;
   max-width:100%;
