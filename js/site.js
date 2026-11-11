@@ -1,5 +1,5 @@
 const PLAY_URL = '';
-const APP_VERSION = '1.0.2';
+const APP_VERSION = '1.3.0';
 
 const LANG_KEY = 'waveday-lang';
 const LANGS = ['ru', 'uk', 'en'];
@@ -101,7 +101,7 @@ const locales = {
     data3: 'Чат — зашифрован на телефоне',
     data4: 'Трекеров и рекламы нет',
     ctaTitle: 'Скачать для Android',
-    ctaLead: 'Последняя версия: {{version}}',
+    ctaLead: 'Тестовая сборка: {{version}}',
     whatsNew: 'Что нового',
     footerDesc: 'Планер от WaveSign Studio',
     privacy: 'Политика конфиденциальности',
@@ -203,7 +203,7 @@ const locales = {
     data3: 'Чат — зашифрований на телефоні',
     data4: 'Трекерів і реклами немає',
     ctaTitle: 'Завантажити для Android',
-    ctaLead: 'Остання версія: {{version}}',
+    ctaLead: 'Тестова збірка: {{version}}',
     whatsNew: 'Що нового',
     footerDesc: 'Планер від WaveSign Studio',
     privacy: 'Політика конфіденційності',
@@ -305,7 +305,7 @@ const locales = {
     data3: 'Chat encrypted on the phone',
     data4: 'No trackers or ads',
     ctaTitle: 'Download for Android',
-    ctaLead: 'Latest version: {{version}}',
+    ctaLead: 'Test build: {{version}}',
     whatsNew: 'What\'s new',
     footerDesc: 'Planner by WaveSign Studio',
     privacy: 'Privacy Policy',
