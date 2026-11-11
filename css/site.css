@@ -745,6 +745,7 @@ body.nav-open{
 }
 .cta-band--inline{
   margin-top:auto;
+  margin-bottom:auto;
   padding:14px clamp(16px,3vw,22px);
   width:100%;
   max-width:100%;
@@ -818,7 +819,7 @@ body.nav-open{
   .hero__copy{
     padding-bottom:0;
   }
-  .cta-band--inline{margin-top:16px}
+  .cta-band--inline{margin-top:16px;margin-bottom:0}
   .hero__scene{order:-1;padding-bottom:8px}
   .device--hero{transform:rotate(3deg)}
   .showcase--split{
