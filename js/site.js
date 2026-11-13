@@ -1,5 +1,5 @@
 const PLAY_URL = '';
-const APP_VERSION = '1.4.0';
+const APP_VERSION = '1.4.4';
 
 const LANG_KEY = 'waveday-lang';
 const LANGS = ['ru', 'uk', 'en'];
